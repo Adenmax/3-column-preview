@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Lexend+Deca:wght@100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Lexend Deca", sans-serif;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-wrap: wrap;
+}
+.right,
+.center,
+.left {
+  width: 250px;
+  height: 400px;
+}
+.left {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: hsl(31, 77%, 52%);
+}
+img {
+  margin-top: 40px;
+  margin-left: 30px;
+}
+h2 {
+  margin-left: 30px;
+  margin-top: 25px;
+  font-family: Big Shoulders, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: hsl(0, 0%, 95%);
+}
+p {
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 25px;
+  font-family: Lexend Deca, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+.center {
+  background-color: hsl(184, 100%, 22%);
+}
+.right {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: hsl(179, 100%, 13%);
+}
+button {
+  margin-left: 30px;
+  width: 120px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  background-color: hsl(0, 0%, 95%);
+  font-family: Lexend Deca, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  transition: width 2s, height 2s, ease-out 2s;
+  transition-timing-function: ease-out;
+}
+.left button {
+  color: hsl(31, 77%, 52%);
+  margin-top: 40px;
+  border: 0.3px solid hsl(31, 77%, 52%);
+}
+.center button {
+  color: hsl(184, 100%, 22%);
+  margin-top: 58px;
+  border: 0.3px solid hsl(184, 100%, 22%);
+}
+.right button {
+  color: hsl(179, 100%, 13%);
+  margin-top: 40px;
+  border: 0.3px solid hsl(179, 100%, 13%);
+}
+button:hover {
+  cursor: pointer;
+  width: 160px;
+  height: 50px;
+  font-size: 18px;
+  border-radius: 50px;
+  border: 0.3px solid hsl(0, 0%, 95%);
+}
+.left .button:hover {
+  background-color: hsl(31, 77%, 52%);
+  color: hsl(0, 0%, 95%);
+}
+.right .button:hover {
+  background-color: hsl(179, 100%, 13%);
+  color: hsl(0, 0%, 95%);
+}
+.center .button:hover {
+  background-color: hsl(184, 100%, 22%);
+  color: hsl(0, 0%, 95%);
+}
+@media screen and (max-width: 450px) {
+  .left,
+  .center,
+  .right {
+    border-radius: 10px;
+  }
+}
